@@ -13,7 +13,7 @@ public class Task5 {
     public static void main(String[] args) {
         int a, a1, a2;
         a = in.nextInt();
-        a1 = a - (a % 10);
+        a1 = a - (a %10);
         a2 = a % 10;
         System.out.println(a1 + "+" + a2);
     }
