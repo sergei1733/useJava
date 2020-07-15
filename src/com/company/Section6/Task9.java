@@ -15,7 +15,8 @@ public class Task9 {
         a = in.nextInt();
         a1 = a / 10;
         a2 = a % 10;
-        if ((a1+a2)>(a1*a2)) System.out.println("положительное");
+        if ((a1+a2)>(a1*a2)) System.out.println("число больше");
+        else System.out.println("произведение больше ");
 
 
 
