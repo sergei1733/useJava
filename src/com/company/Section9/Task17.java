@@ -13,17 +13,12 @@ public class Task17 {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         int a, b, c;
+
         a = in.nextInt();
         b = in.nextInt();
         c = in.nextInt();
-
-       // if (a+b+c < 180)
-            System.out.println(a+b+c <= 180? "Является":"не является");
-       // else
-            //System.out.println("не является");
-
+        System.out.println(a + b + c == 180 ? "Является" : "не является");
 
 
     }
