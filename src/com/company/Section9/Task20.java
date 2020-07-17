@@ -16,10 +16,10 @@ public class Task20 {
         int a, a1, a2;
 
         a = in.nextInt();
-        a1 = a/60;
-        a2 = a-a1*60;
+        a1 = a / 60;
+        a2 = a - a1 * 60;
 
-        System.out.println(a > 3600 ? "расчет не производится" : ""+a1+" мин "+a2 +" сек");
+        System.out.println(a > 3600 ? "расчет не производится" : "" + a1 + " мин " + a2 + " сек");
 
 
     }
