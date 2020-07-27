@@ -1,8 +1,10 @@
 package com.company.Section10;
+
 import org.w3c.dom.ls.LSOutput;
 
 import java.lang.Math;
-import  java.util.Scanner;
+import java.util.Scanner;
+
 /*
 Задание 10.8
 Напишите класс, который принимает с клавиатуры целое число и затем
@@ -20,17 +22,18 @@ import  java.util.Scanner;
  */
 public class Task8 {
     public static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
-        int start,end,a,b;
+        int start, end, a, b;
         a = in.nextInt();
-        start = a-5;
-        end = a+6;
-        System.out.println(start+" "+end);
-        b = start + (int)((end - start+1)*Math.random());
+        start = a - 5;
+        end = a + 6;
+        System.out.println(start + " " + end);
+        b = start + (int) ((end - start + 1) * Math.random());
         System.out.println(b);
-        System.out.println(a==b?"угадал":"не угадал");
-        System.out.println(a!=b && b>a?"слишком большое число":"");
-        System.out.println(a!=b && b<a?"слишком маленькое":"");
+        System.out.println(a == b ? "угадал" : "не угадал");
+        System.out.println(a != b && b > a ? "слишком большое число" : "");
+        System.out.println(a != b && b < a ? "слишком маленькое" : "");
 
 
     }
