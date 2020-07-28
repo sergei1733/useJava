@@ -20,7 +20,7 @@ public class Task38 {
             a2 = (a%100)/10;
             if (a%x==0) {
                 System.out.println(Math.ceil(Math.sqrt(a1)) + " " + a);
-            }
+            }else
                 System.out.println(Math.floor(Math.sqrt(a2))+" "+a);
 
 
