@@ -14,24 +14,25 @@ public class Task6 {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int x,x1;
+        int x, x1;
         x = in.nextInt();
         x1 = in.nextInt();
-        System.out.println(amountOfNumbers(x,x1));
+        System.out.println(amountOfNumbers(x, x1));
     }
-    public static boolean amountOfNumbers(int a,int b){
+
+    public static boolean amountOfNumbers(int a, int b) {
         int count = 0, count1 = 0;
-        while (a>0){
-            count ++;
-            a /=10;
+        while (a > 0) {
+            count++;
+            a /= 10;
         }
-        while (b>0){
-            count1 ++;
-            b/=10;
+        while (b > 0) {
+            count1++;
+            b /= 10;
         }
-        System.out.println("a "+count);
-        System.out.println("b "+count1);
-        if (count==count1)
+        System.out.println("a " + count);
+        System.out.println("b " + count1);
+        if (count == count1)
             return true;
         else
             return false;
