@@ -18,23 +18,25 @@ public class Task7 {
         int array[], start = 10, end = 99, x;
         x = in.nextInt();
         array = new int[x];
-        zapolnMass(array,start,end);
+        zapolnMass(array, start, end);
         output(array);
     }
-    private static void zapolnMass(int array[], int start, int end){
-        for (int i = 0; i<array.length; i++){
-            array[i] = start + (int)((end - start+1)*Math.random());
-            System.out.print(array[i]+" ");
+
+    private static void zapolnMass(int array[], int start, int end) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = start + (int) ((end - start + 1) * Math.random());
+            System.out.print(array[i] + " ");
         }
         System.out.println();
     }
-    private static void output(int array[]){
-        for (int i=0; i<array.length/2; i++){
-            System.out.print(array[i]+" ");
+
+    private static void output(int array[]) {
+        for (int i = 0; i < array.length / 2; i++) {
+            System.out.print(array[i] + " ");
         }
         System.out.println();
-        for (int i=array.length-1;i>array.length/2-1; i--){
-            System.out.print(array[i]+" ");
+        for (int i = array.length - 1; i > array.length / 2 - 1; i--) {
+            System.out.print(array[i] + " ");
         }
     }
 }

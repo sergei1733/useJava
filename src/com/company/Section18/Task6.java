@@ -22,26 +22,28 @@ public class Task6 {
         int srray[], start = 100, end = 999, x;
         x = in.nextInt();
         srray = new int[x];
-        zapMass(srray,start,end);
-        out(srray,x);
+        zapMass(srray, start, end);
+        out(srray, x);
     }
-    private static void zapMass(int array[], int start, int end){
-        for (int i=0; i<array.length; i++){
-            array[i] = start + (int)((end-start+1)*Math.random());
-            System.out.print(array[i]+" ");
+
+    private static void zapMass(int array[], int start, int end) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = start + (int) ((end - start + 1) * Math.random());
+            System.out.print(array[i] + " ");
         }
         System.out.println();
     }
-    private static void out(int array[], int x){
-        int k=0;
-        for (int i=0;i<array.length/2;i++) {
+
+    private static void out(int array[], int x) {
+        int k = 0;
+        for (int i = 0; i < array.length / 2; i++) {
             if (array.length % 2 != 0)
-                k=1;
-                x -= 1;
-                System.out.println(array[i] + " " + array[x]);
+                k = 1;
+            x -= 1;
+            System.out.println(array[i] + " " + array[x]);
         }
-        if (k==1)
-            System.out.println(array[array.length/2]);
+        if (k == 1)
+            System.out.println(array[array.length / 2]);
 
     }
 }

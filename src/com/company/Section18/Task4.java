@@ -21,28 +21,30 @@ public class Task4 {
         int array[];
         x = in.nextInt();
         array = new int[x];
-        zapMass(array,start,end);
+        zapMass(array, start, end);
         out(array);
     }
-    private static void zapMass(int array[], int start, int end){
-        for (int i = 0; i<=array.length-1;i++){
-            array[i] = start+(int)((end-start+1)*Math.random());
-            System.out.print(array[i]+" ");
+
+    private static void zapMass(int array[], int start, int end) {
+        for (int i = 0; i <= array.length - 1; i++) {
+            array[i] = start + (int) ((end - start + 1) * Math.random());
+            System.out.print(array[i] + " ");
         }
         System.out.println();
     }
-    private static void out(int array[]){
-        int a,l1,l2;
-        if (array.length%2!=0)
-            l1=array.length/2+1;
+
+    private static void out(int array[]) {
+        int a, l1, l2;
+        if (array.length % 2 != 0)
+            l1 = array.length / 2 + 1;
         else
-            l1 = array.length/2;
-        for (int i = 0;i<=l1-1;i++){
-            System.out.print(array[i]+" ");
+            l1 = array.length / 2;
+        for (int i = 0; i <= l1 - 1; i++) {
+            System.out.print(array[i] + " ");
         }
         System.out.println();
-        for (int i = l1;i<=array.length-1;i++){
-            System.out.print(array[i]+" ");
+        for (int i = l1; i <= array.length - 1; i++) {
+            System.out.print(array[i] + " ");
         }
     }
 }
