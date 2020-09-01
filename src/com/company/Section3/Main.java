@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Section3;
 
 public class Main {
 
