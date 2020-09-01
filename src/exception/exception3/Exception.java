@@ -1,4 +1,4 @@
-package com.company.exception.exception3;
+package exception.exception3;
 
 public class Exception {
     public static void main(String[] args) {
